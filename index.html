@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'pagina_principal')">Sobre mí</button>
+        <button class="tablinks" onclick="openCity(event, 'pagina_habilidades')">Habilidades</button>
+        <button class="tablinks" onclick="openCity(event, 'pagina_proyectos')">Proyectos</button>
+        <button class="tablinks" onclick="openCity(event, 'pagina_contacto')">Contáctame</button>
+    </div>
+
+    <section id="pagina_principal" class="caja tabcontent">
+        <div class="caja-contenido-principal config">
+            <div class="contenido-informacion">
+                <div class="caja-contenido-principal__contenido">
+                    <div class="principal-imagen">
+                        <img class="imagen" src="images/user_profile.jpg" alt="">
+                    </div>
+
+                    <div class="principal-textos">
+                        <h1 class="principal-texto__nombre">JEAN C. TRUJILLO P.</h1>
+                        <br>
+                        <h3 class="principal-texto__ocupacion">Estudiante</h3>
+                        <br>
+                        <p class="principal-texto__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quas, ducimus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido-enlaces">
+                <ul class="enlaces-menu">
+                    <li class="menu__item" onclick="openCity(event, 'pagina_habilidades')">
+                        Habilidades</li>
+                    <li class="menu__item" onclick="openCity(event, 'pagina_proyectos')">
+                        Proyectos </li>
+                    <li class="menu__item" onclick="openCity(event, 'pagina_contacto')">
+                        Contáctame</li>
+                </ul>
+            </div>
+
+            <div class="contenido-redes">
+                <div class="redes-tarjetas">
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-imagen">
+                            <i class="fa-brands fa-github fa-3x"></i>
+                        </div>
+                        <div class="tarjeta-textos">
+                            <h4><span class="color-verde">@zacksPerez43</span></h4>
+                            <a href="https://github.com/zacksPerez43" class="pagina-link">Github <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-imagen">
+                            <i class="fa-brands fa-instagram fa-3x"></i>
+                        </div>
+                        <div class="tarjeta-textos">
+                            <h4><span class="color-verde">kotscarlos</span></h4>
+                            <a href="https://www.instagram.com/kotscarlos/">Instagram <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-imagen">
+                            <i class="fa-brands fa-whatsapp fa-3x"></i>
+                        </div>
+                        <div class="tarjeta-textos">
+                            <h4><span class="color-verde">Whatsapp</span></h4>
+                            <a href="https://api.whatsapp.com/send?phone=573113109661">Whatsapp<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="pagina_habilidades" class="caja tabcontent">
+        <div class="caja-contenido-habilidades config">
+
+
+            <div class="habilidades-grilla">
+
+                <div class="habilidades-titulo-principal">
+                    <h1 class="habilidades-titulo__principal">Habilidades</h1>
+                </div>
+
+                <div class="habilidades-programacion">
+                    <div class="programacion-grilla">
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">Python</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/python.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">Java</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/java.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">JavaScript</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/javascript.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">SQL</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/sql.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidades-frameworks">
+                    <div class="frameworks-grilla">
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">React</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/react.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">Flask</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/flask.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">Bootstrap</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/bootstrap.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidades-otros">
+
+                    <div class="otros-grilla">
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">HTML5</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/html5.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">CSS</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/css.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <div class="habilidad-titulo">
+                                <h1 class="habilidad__titulo">Git</h1>
+                            </div>
+                            <div class="habilidad-imagen">
+                                <img class="habilidad__imagen" src="images/lenguajes/git.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="pagina_proyectos" class="caja tabcontent">
+        <div class="caja-contenido">
+            <div class="caja-contenido-principal">
+                <div class="caja-contenido-principal__contenido">
+                    <h1>Proyectos</h1>
+                </div>
+            </div>
+    </section>
+
+    <script src="javascript.js"> </script>
+    <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
