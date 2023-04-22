@@ -27,7 +27,7 @@ li{
 
 /* Style the tab */
 .tab {
-    margin-top: 15vh;
+    margin-top: 7vh;
     display: inline-block;
   }
   
@@ -62,44 +62,50 @@ li{
 /* Caja principal */
 
 .caja{
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: 8vw;
+    margin-left: 8vw;
     background-color: #ffffff;
     border-radius: 10px;
-    max-width: 80vw;    
+}
+
+.config2{
+    padding: 2em;
+    height: 65vh;
 }
 
 .caja-contenido-principal{
     display: grid;
-    grid-template-areas: "contenido_principal contenido_secundario"
-                         "contenido_terciario contenido_terciario";
+    align-items: center;
 }
 
-.config{
-    /* padding: 2vw; */
-    /* width: 75vw; */   
-    height: 60vh;
+.principal-grilla{
+    display: grid;
+    grid-template-areas: 
+    "contenido_principal contenido_secundario"
+    "contenido_terciario contenido_terciario";
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.2fr;
+    row-gap: 7vh;
 }
 
 .contenido-informacion{ 
     display: grid;
-    grid-area: contenido_principal;
+    grid-area: contenido_principal; 
 }
 
 .contenido-enlaces{
-    display: grid;
     grid-area: contenido_secundario;
 }
 
 .contenido-redes{
     display: grid;
+align-items: end;
     grid-area: contenido_terciario;
 }
 
-.caja-contenido-principal__contenido{
+.informacion-grilla{
     display: grid;
     grid-template-areas: "imagen textos";
-    grid-template-columns: 0.5fr 1fr;
     text-align: center;
     align-items: center;
 }
@@ -109,7 +115,7 @@ li{
     text-align: center;
 }
 
-.imagen{
+.principal-imagen .imagen{
     height: 30vh;
     width: auto;
 }
@@ -135,13 +141,13 @@ li{
     font-size: 1em;
     line-height: 1.5em;
     color:#444444;
+    width: 45vw;
 }
 
 .enlaces-menu{
     list-style: none;
     line-height: 2.5vw;
     border-left: 1px solid #F1F1F1;
-    padding-left: 1vw;
 }
 
 .menu__item{
@@ -181,6 +187,7 @@ li{
     color: #59bd85;
 }
 
+
 .caja-contenido-habilidades{
     display: grid;
     align-content: stretch;
@@ -191,12 +198,11 @@ li{
     grid-template-areas:
         "titulo titulo titulo"
         "programacion otros frameworks";
+    max-width: 100vw;
 }
 
 .habilidades-titulo-principal{
     grid-area: titulo;
-    display: grid;
-    align-content: center;
 }
 
 .habilidades-programacion{
@@ -205,8 +211,9 @@ li{
 
 .programacion-grilla{
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -216,8 +223,8 @@ li{
 
 .frameworks-grilla{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .habilidades-otros{
@@ -226,16 +233,16 @@ li{
 
 .otros-grilla{
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
     border-right: 1px solid #444444;
     border-left: 1px solid #444444;
 }
 
 .habilidad__imagen{
-    height: 13vh;
-    width: auto;
+    height: auto;
+    width: 6vw;
 }
 
 .habilidades-titulo__principal{
@@ -261,3 +268,4 @@ li{
     align-content: center;
     justify-content: space-evenly;
 }
+

@@ -5,6 +5,8 @@ function openCity(evt, cityName) {
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
 
+    console.log(tabcontent[0])
+
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
