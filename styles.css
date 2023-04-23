@@ -204,8 +204,8 @@ li {
 .habilidades-grilla {
     display: grid;
     grid-template-areas:
-        "titulo titulo titulo"
-        "programacion otros frameworks";
+        "titulo "
+        "programacion";
     max-width: 100vw;
 }
 
@@ -223,34 +223,12 @@ li {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-}
-
-.habilidades-frameworks {
-    grid-area: frameworks;
-}
-
-.frameworks-grilla {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.habilidades-otros {
-    grid-area: otros;
-}
-
-.otros-grilla {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    border-right: 1px solid #444444;
-    border-left: 1px solid #444444;
+    column-gap: 2vw;
 }
 
 .habilidad__imagen {
     height: auto;
-    width: 6vw;
+    width: 7vw;
 }
 
 .habilidades-titulo__principal {
@@ -282,17 +260,19 @@ li {
     grid-template-areas:
         "titulo"
         "tarjetas";
-
+    row-gap: 2vh;
 }
+
 
 .proyectos-grilla .tarjetas {
     display: flex;
     grid-area: tarjetas;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 4vw;
+    column-gap: 3vw;
     row-gap: 1vw;
-
+    overflow-x: auto;
+    height: 65vh;
 }
 
 .proyectos-grilla .tarjeta {
@@ -303,9 +283,17 @@ li {
         "descripcion descripcion"
         "comentarios comentarios"
         "boton boton";
-    width: 20vw;
     height: 30vh;
-    padding: 0.5vw;
+    border-radius: 2%;
+    background-color: #191919;
+    color: azure;
+     /* 
+    width: 22vw;
+    padding: 0.6vw;
+    */
+   
+    width: 30vw;
+    padding: 1vw;
 }
 
 .proyectos-grilla .tarjeta .tarjeta-icono {
@@ -337,6 +325,9 @@ li {
 .proyectos-grilla .tarjeta .tarjeta-boton {
     text-align: start;
     grid-area: boton;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .proyectos-grilla .tarjeta .tarjeta-icono img {
@@ -354,7 +345,27 @@ li {
 }
 
 .proyectos-grilla .tarjeta .tarjeta-comentarios .tarjeta-comentarios-grilla .tarjeta-comentarios-bloque {
-    border: 1px solid #191919;
     padding: 0.1vw;
     border-radius: 10%;
 }
+
+.proyectos-grilla .tarjeta .tarjeta-lenguaje .tarjeta__lenguaje{
+    font-size: 0.9vw;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-titulo .tarjeta__titulo{
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-descripcion .tarjeta__descripcion{
+    font-size: 0.95vw;
+    line-height: 1.5;
+}
+
+.proyectos-grilla .tarjeta .tarjeta-boton a {
+    color: #59bd85;
+}
+
+
+
